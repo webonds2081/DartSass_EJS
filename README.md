@@ -1,4 +1,4 @@
-# ejs-gulp-wordpress-sp
+# DartSass-EJS
 
 - ダウンロード後、ターミナルを起動する
 - srcフォルダに移動する（ターミナルで「 cd src 」と入力）
@@ -22,9 +22,3 @@
 - 読み込む際は必ずassetsから。
 - 必要に応じてフォルダを作成してその中にいれる
 - 自動圧縮されます
-
-# DartSass-EJS
-# -DartSass-EJS
-# DartSass_EJS
-# DartSass_EJS
-# DartSass_EJS
