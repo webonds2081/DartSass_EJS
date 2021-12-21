@@ -42,14 +42,14 @@ const destPath = {
 
 
 // 不要ファイルを削除
-const del = require('del');
-const delPath = {
-	dist: '../dist/'
-}
-const clean = (done) => {
-	del(delPath.dist, { force: true, });
-	done();
-};
+// const del = require('del');
+// const delPath = {
+// 	dist: '../dist/'
+// }
+// const clean = (done) => {
+// 	del(delPath.dist, { force: true, });
+// 	done();
+// };
 const browsers = [
 	'last 2 versions',
 	'> 5%',
@@ -194,4 +194,4 @@ const watchFiles = () => {
 	watch(srcPath.ejs, series(ejsCompile, browserSyncReload))
 
 }
-exports.default = series(series(clean, cssSass, jsBabel, imgImagemin, ejsCompile), parallel(watchFiles, browserSyncFunc));
+exports.default = series(series(cssSass, jsBabel, imgImagemin, ejsCompile), parallel(watchFiles, browserSyncFunc));
