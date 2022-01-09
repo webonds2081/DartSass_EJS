@@ -176,6 +176,7 @@ const jsBabel = () => {
 
 // ブラウザーシンク
 const browserSyncOption = {
+	notify: false,
 	server: "../dist/"
 }
 const browserSyncFunc = () => {
